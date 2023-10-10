@@ -1,45 +1,247 @@
-/*  File name: Assignment-1
-    Student's Name: Dhruvil Rangani
-    StudentID: 301161155
-    Date: 09/10/2023     */
+/*  File Name: Assignment-1  
+    Name: Dhruvil Rangani
+    Student ID: 301161155
+*/
 
+/* CSS styling for Home Page*/
+body {
+	margin: 0;
+	background-color: aliceblue;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-weight: 800;
+}
 
-/* Reset some default styles */
-body, ul {
+.container {
+	width: 97%;
+	margin: 0 auto;
+    background-color:steelblue;
+    padding-inline-start: 30px;
+    padding-right: 50px;
+}
+
+div{
+    content: '';
+    display:table;
+    clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  width: 50px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color:rgb(4, 46, 46);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color:antiquewhite;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color:whitesmoke;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/* CSS styling for Projects Page*/
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-description {
+    margin-top: 10px;
+}
+
+/*About CSS styling About Page*/
+.about-img img {
+    width: 400px;
+}
+.about-img{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.pdf-container{
+    text-align: center;
+    margin-left: 50px;
+}
+
+a.pdf-link{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:darkblue; 
+    color: #fff; 
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+a.pdf-link:hover{
+    background-color: rgb(124, 124, 255);
+}
+
+/*CSS styling for Contact Page*/
+body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
 
-/* Style the navigation bar */
-.navbar {
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.contact-panel {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.contact-form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
     background-color: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: #fff;
+    border: none;
     padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-/* Style the logo */
-.logo img {
-    width: 50px; /* Adjust the size as needed */
+button[type="submit"]:hover {
+    background-color: #555;
 }
 
-/* Style the navigation links */
-.nav-links {
-    list-style-type: none;
+.contact-panel,
+.contact-form {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-panel,
+    .contact-form {
+        margin: 10px;
+    }
+}
+
+/*CSS styling for Services Page*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-.nav-links li {
-    margin-right: 20px;
+.service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 400px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.nav-links a:hover {
-    color: #ff5733; /* Change to your desired hover color */
+.service h2 {
+    font-size: 1.5rem;
+    color: #333;
 }
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
