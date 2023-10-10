@@ -1,4 +1,5 @@
-/*  Name: Dhruvil Rangani
+/*  File Name: Assignment-1  
+    Name: Dhruvil Rangani
     Student ID: 301161155
 */
 
@@ -99,7 +100,7 @@ nav a:hover::before {
     margin-top: 10px;
 }
 
-/*About CSS styling Page*/
+/*About CSS styling About Page*/
 .about-img img {
     width: 400px;
 }
@@ -129,4 +130,118 @@ a.pdf-link{
 a.pdf-link:hover{
     background-color: rgb(124, 124, 255);
 }
+
+/*CSS styling for Contact Page*/
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.contact-panel {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.contact-form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.contact-panel,
+.contact-form {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-panel,
+    .contact-form {
+        margin: 10px;
+    }
+}
+
+/*CSS styling for Services Page*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.service h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
 

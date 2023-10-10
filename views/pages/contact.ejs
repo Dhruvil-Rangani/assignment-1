@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%- include("../partials/header"); %>
+    <%- include("../partials/header"); %> 
 </head>
 <body>
     <%- include("../partials/navigation");%>
+
+    <div class="contact-panel">
+        <h2>Contact Information</h2>
+        <p>Name: Dhruvil Rangani</p>
+        <p>Email: dhruvilrangani007@gmail.com</p>
+        <p>Phone: 647-673-9916</p>
+        <p>Message: Fill out the form below to send me a message. Thank you</p>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+        <form id="contactForm" action="javascript:void(0);" onsubmit="redirectToHome()">
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+            <input type="tel" id="contactNumber" name="contactNumber" placeholder="Contact Number" required>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="JavaScript/design.js"></script>
 </body>
 </html>
